@@ -132,22 +132,8 @@ body {
         }
     }
 
-    /* Video container for GSAP animation */
-    .video {
-        position: absolute;
-        inset: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 0;
-        pointer-events: none;
-        overflow: hidden;
-    }
-
-    .video video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+    video {
+        @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
 
     #cocktails {
